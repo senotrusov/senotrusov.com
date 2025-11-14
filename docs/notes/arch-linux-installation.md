@@ -138,7 +138,7 @@ passwd
 
 ### Establish an SSH session
 
-=== "Connect with mDNS (`archiso.local`)"
+=== "Connect with mDNS"
 
     If your client machine supports mDNS (Multicast DNS), you can connect using the default hostname `archiso.local`.
 
