@@ -29,6 +29,9 @@ site_author = "Stanislav Senotrusov"
 # Read more: https://zensical.org/docs/setup/basics/#site_url
 site_url = "https://www.senotrusov.com/"
 
+# The repo_url
+repo_url = "https://github.com/senotrusov/senotrusov.com"
+
 # The copyright notice appears in the page footer and can contain an HTML
 # fragment.
 #
@@ -312,4 +315,26 @@ description = """
     as to measure the effectiveness of our documentation and whether users
     find what they're searching for. With your consent, you're helping us to
     make our documentation better.
+"""
+
+[project.extra.analytics]
+provider = "google"
+property = "G-X6483TGW9T"
+
+[project.extra.analytics.feedback]
+title = "Was this page helpful?"
+
+[[project.extra.analytics.feedback.ratings]]
+icon = "material/emoticon-happy-outline"
+name = "This page was helpful"
+data = 1
+note = "Thanks for your feedback!"
+
+[[project.extra.analytics.feedback.ratings]]
+icon = "material/emoticon-sad-outline"
+name = "This page could be improved"
+data = 0
+note = """
+  Thanks for your feedback!
+  You can help improve this page by sending a <a href="https://github.com/senotrusov/senotrusov.com/pulls" target="_blank" rel="noopener">pull request</a>.
 """
