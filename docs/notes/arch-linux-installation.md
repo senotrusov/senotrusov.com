@@ -36,9 +36,9 @@ You can also complete the installation directly on the target machine if you pre
 
 ## Safe use of shell variables
 
-Throughout this guide, variables are used with safety checks such as `"${target:?}"` to help prevent accidental command runs with unset or empty variables. This approach is especially useful when copying commands over SSH or working with multiple shell tabs open.
+Throughout this guide, variables are written with safety checks such as "${target:?}" to prevent accidental command execution when a variable is unset or empty. This practice is especially helpful when copying commands over SSH or when several shell tabs are open, since it reduces the chance of running a command with incomplete parameters.
 
-For manual input, you may simplify to `$target` as long as you confirm all variables are correctly assigned and contain no spaces before running any commands.
+For manual input, you may simplify how you reference variables and use $target directly. Just make sure that every variable has been assigned correctly, contains the expected value, and does not include spaces before you run any commands.
 
 ## Download the Arch ISO and Write the ISO to a USB Drive
 
