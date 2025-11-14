@@ -194,11 +194,11 @@ fdisk -l
 
 !!! danger
 
-    The following steps will completely delete all data on the selected device. Choose carefully.
+    The device you select will be completely erased in the following steps. Choose carefully to avoid deleting data from the wrong device.
 
 === "NVMe Drives"
 
-    Substitute `/dev/nvme0n1` with the correct NVMe device name and define the partition variables.
+    Replace `/dev/nvme0n1` with the NVMe device you want to use, and assign the partition names to variables. All data on the selected device will be permanently deleted.
 
     ```sh
     target=/dev/nvme0n1
@@ -209,7 +209,7 @@ fdisk -l
 
 === "SATA HDDs/SSDs"
 
-    Substitute `/dev/sdb` with the correct SATA device name and define the partition variables.
+    Replace `/dev/nvme0n1` with the SATA device you want to use, and assign the partition names to variables. All data on the selected device will be permanently deleted.
 
     ```sh
     target=/dev/sdb
