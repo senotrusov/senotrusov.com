@@ -49,12 +49,14 @@ Copyright &copy; 2025 Stanislav Senotrusov –
 # can be defined using TOML syntax.
 #
 # Read more: https://zensical.org/docs/setup/navigation/
-nav = [
-   {"Home" = "index.md"},
-   {"Notes" = [
-      {"Arch Linux installation" = "notes/arch-linux-installation"}
-  ]},
-]
+
+# WARNING: Setting custom navigation here will result in no notes in sitemap.xml
+# nav = [
+#    {"Home" = "index.md"},
+#    {"Notes" = [
+#       {"Arch Linux installation" = "notes/arch-linux-installation"}
+#   ]},
+# ]
 
 # With the "extra_css" option you can add your own CSS styling to customize
 # your Zensical project according to your needs. You can add any number of
