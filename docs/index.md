@@ -7,4 +7,4 @@ hide:
 
 ## Notes I couldn’t keep to myself
 
-* [Arch Linux installation](/notes/arch-linux-installation/)
+* [Arch Linux installation guide](/notes/arch-linux-installation/)
