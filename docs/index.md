@@ -5,6 +5,6 @@ hide:
 
 # Home
 
-## Whimsical things that catch my interest
+## Notes I couldn’t keep to myself
 
-* [Arch Linux installation notes](/notes/arch-linux-installation/)
+* [Arch Linux installation](/notes/arch-linux-installation/)

@@ -1,8 +1,7 @@
-name: Documentation
+name: Website
 on:
   push:
     branches:
-      - master
       - main
 permissions:
   contents: read
@@ -17,6 +16,11 @@ jobs:
     steps:
       - uses: actions/configure-pages@v5
       - uses: actions/checkout@v5
+      - name: Checkout additional repo
+        uses: actions/checkout@v5
+        with:
+          repository: senotrusov/notes
+          path: docs/notes
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x

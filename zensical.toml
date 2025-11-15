@@ -17,7 +17,7 @@ site_name = "Stanislav Senotrusov"
 # meaningful description of the site content for use by search engines.
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_description
-site_description = "My personal notes."
+site_description = "My personal website."
 
 # The site_author attribute. This is used in the HTML head element.
 #
@@ -30,7 +30,8 @@ site_author = "Stanislav Senotrusov"
 site_url = "https://www.senotrusov.com/"
 
 # The repo_url
-repo_url = "https://github.com/senotrusov/senotrusov.com"
+repo_url = "https://github.com/senotrusov/notes"
+edit_uri = "edit/main"
 
 # The copyright notice appears in the page footer and can contain an HTML
 # fragment.
@@ -48,10 +49,12 @@ Copyright &copy; 2025 Stanislav Senotrusov –
 # can be defined using TOML syntax.
 #
 # Read more: https://zensical.org/docs/setup/navigation/
-# nav = [
-#   { "Get started" = "index.md" },
-#   { "Markdown in 5min" = "markdown.md" },
-# ]
+nav = [
+   {"Home" = "index.md"},
+   {"Notes" = [
+      {"Arch Linux installation" = "notes/arch-linux-installation"}
+  ]},
+]
 
 # With the "extra_css" option you can add your own CSS styling to customize
 # your Zensical project according to your needs. You can add any number of
@@ -126,13 +129,13 @@ features = [
     # will generate an edit button for the page. This works for common
     # repository hosting services.
     # https://zensical.org/docs/setup/repository/#code-actions
-    #"content.action.edit",
+    # "content.action.edit",
 
     # If you have a repository configured and turn feature this on, Zensical
     # will generate a button that allows the user to view the Markdown
     # code for the current page.
     # https://zensical.org/docs/setup/repository/#code-actions
-    #"content.action.view",
+    # "content.action.view",
 
     # Code annotations allow you to add an icon with a tooltip to your
     # code blocks to provide explanations at crucial points.
@@ -198,7 +201,7 @@ features = [
     # In order to provide a better user experience on slow connections when
     # using instant navigation, a progress indicator can be enabled.
     # https://zensical.org/docs/setup/navigation/#progress-indicator
-    #"navigation.instant.progress",
+    # "navigation.instant.progress",
 
     # When navigation paths are activated, a breadcrumb navigation is rendered
     # above the title of each page
@@ -208,7 +211,7 @@ features = [
     # When pruning is enabled, only the visible navigation items are included
     # in the rendered HTML, reducing the size of the built site by 33% or more.
     # https://zensical.org/docs/setup/navigation/#navigation-pruning
-    #"navigation.prune",
+    # "navigation.prune",
 
     # When sections are enabled, top-level sections are rendered as groups in
     # the sidebar for viewports above 1220px, but remain as-is on mobile.
@@ -218,12 +221,12 @@ features = [
     # When tabs are enabled, top-level sections are rendered in a menu layer
     # below the header for viewports above 1220px, but remain as-is on mobile.
     # https://zensical.org/docs/setup/navigation/#navigation-tabs
-    #"navigation.tabs",
+    # "navigation.tabs",
 
     # When sticky tabs are enabled, navigation tabs will lock below the header
     # and always remain visible when scrolling down.
     # https://zensical.org/docs/setup/navigation/#sticky-navigation-tabs
-    #"navigation.tabs.sticky",
+    # "navigation.tabs.sticky",
 
     # A back-to-top button can be shown when the user, after scrolling down,
     # starts to scroll up again.
@@ -249,7 +252,7 @@ features = [
     # When navigation integration for the table of contents is enabled, it is
     # always rendered as part of the navigation sidebar on the left.
     # https://zensical.org/docs/setup/navigation/#navigation-integration
-    #"toc.integrate",
+    # "toc.integrate",
 ]
 
 # ----------------------------------------------------------------------------
@@ -297,6 +300,7 @@ toggle.name = "Switch to light mode"
 # - https://zensical.org/docs/authoring/icons-emojis/#search
 # ----------------------------------------------------------------------------
 [project.theme.icon]
+logo = "fontawesome/solid/quote-left"
 # logo = "lucide/smile"
 # repo = "lucide/smile"
 
@@ -306,7 +310,6 @@ toggle.name = "Switch to light mode"
 #[[project.extra.social]]
 #icon = "fontawesome/brands/github"
 #link = "https://github.com/user/repo"
-
 
 [project.extra.consent]
 title = "Cookie consent"
@@ -336,5 +339,5 @@ name = "This page could be improved"
 data = 0
 note = """
   Thanks for your feedback!
-  You can help improve this page by sending a <a href="https://github.com/senotrusov/senotrusov.com/pulls" target="_blank" rel="noopener">pull request</a>.
+  You can help improve this page by sending a <a href="https://github.com/senotrusov/notes/pulls" target="_blank" rel="noopener">pull request</a>.
 """
