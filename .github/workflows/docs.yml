@@ -1,8 +1,11 @@
-name: Website
+name: Documentation
 on:
   push:
     branches:
       - main
+  repository_dispatch:
+    types:
+      - notes-updated
 permissions:
   contents: read
   pages: write
