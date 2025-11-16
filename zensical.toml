@@ -343,3 +343,7 @@ note = """
   Thanks for your feedback!
   You can help improve this page by sending a <a href="https://github.com/senotrusov/notes/pulls" target="_blank" rel="noopener">pull request</a>.
 """
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/senotrusov"
