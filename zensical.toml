@@ -38,8 +38,7 @@ edit_uri = "edit/main"
 #
 # Read more: https://zensical.org/docs/setup/basics/#copyright
 copyright = """
-Copyright &copy; 2025 Stanislav Senotrusov –
-  <a href="#__consent">Change cookie settings</a>
+Copyright &copy; 2025 Stanislav Senotrusov ◦ <a href="#__consent">Change cookie settings</a>
 """
 
 # Zensical supports both implicit navigation and explicitly defined navigation.
@@ -309,9 +308,10 @@ logo = "fontawesome/solid/quote-left"
 # ----------------------------------------------------------------------------
 # The "extra" section contains miscellaneous settings.
 # ----------------------------------------------------------------------------
-#[[project.extra.social]]
-#icon = "fontawesome/brands/github"
-#link = "https://github.com/user/repo"
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/senotrusov"
+
 
 [project.extra.consent]
 title = "Cookie consent"
@@ -343,7 +343,3 @@ note = """
   Thanks for your feedback!
   You can help improve this page by sending a <a href="https://github.com/senotrusov/notes/pulls" target="_blank" rel="noopener">pull request</a>.
 """
-
-[[project.extra.social]]
-icon = "fontawesome/brands/github"
-link = "https://github.com/senotrusov"
