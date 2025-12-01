@@ -18,12 +18,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/configure-pages@v5
+      
+      # Main repo checkout
       - uses: actions/checkout@v5
+      
+      # Notes repo checkout
       - name: Checkout notes repo
         uses: actions/checkout@v5
         with:
           repository: senotrusov/notes
           path: docs/notes
+      - name: Remove git metadata from notes
+        run: rm -rf docs/notes/.git
+
       - uses: actions/setup-python@v5
         with:
           python-version: 3.13
