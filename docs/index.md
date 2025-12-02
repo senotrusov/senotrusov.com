@@ -5,6 +5,6 @@ hide:
 
 # Home
 
-## Notes I couldn’t keep to myself
+## Notes I couldn't keep to myself
 
-* [Arch Linux installation guide](/notes/arch-linux-installation/)
+* [Stanislav's guide to Arch Linux installation](/notes/arch-linux-installation/)
