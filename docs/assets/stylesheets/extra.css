@@ -6,3 +6,9 @@
   font-size: 75%;
   opacity: .80;
 }
+
+@media (min-width: 280px) {
+  .md-typeset h1 .nobr {
+    white-space: nowrap;
+  }
+}
