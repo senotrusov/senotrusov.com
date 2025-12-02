@@ -1,3 +1,8 @@
 .md-grid {
   max-width: 72rem;
 }
+
+.md-typeset h1 small {
+  font-size: 75%;
+  opacity: .80;
+}
