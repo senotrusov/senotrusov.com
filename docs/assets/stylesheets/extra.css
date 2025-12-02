@@ -12,3 +12,7 @@
     white-space: nowrap;
   }
 }
+
+.md-typeset p .nobr {
+  white-space: nowrap;
+}
