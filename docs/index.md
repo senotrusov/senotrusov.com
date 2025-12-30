@@ -3,8 +3,8 @@ hide:
   - feedback
 ---
 
-# Home
+# Stanislav Senotrusov
 
 ## Notes I couldn’t keep to myself
 
-* [Guide to installing Arch Linux](/notes/arch-linux-installation/)
+* [Guide to installing Arch Linux](/notes/installing-arch-linux/)
