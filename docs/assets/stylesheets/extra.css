@@ -1,3 +1,10 @@
+/*
+Possible font sizes for the HTML tag
+150%    24px
+137.5%  22px
+125%    20px
+*/
+
 .md-grid {
   max-width: 80rem;
 }
@@ -14,6 +21,14 @@
 .md-typeset details,
 .md-typeset .tabbed-labels > label {
   font-size: 0.875rem;
+}
+
+.md-typeset .admonition-title::before {
+  top: 0.3em;
+}
+
+.md-typeset .admonition-title {
+  margin-bottom: -0.4em;
 }
 
 @media (min-width: 280px) {
