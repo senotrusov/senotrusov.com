@@ -41,10 +41,6 @@ Possible font sizes for the HTML tag
   top: 0.3em;
 }
 
-.md-typeset h5, .md-typeset h6 {
-  margin: 2em 0 1.25em 0;
-}
-
 /* misc */
 
 @media (min-width: 280px) {
