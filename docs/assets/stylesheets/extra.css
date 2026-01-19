@@ -1,14 +1,25 @@
-/*
-Possible font sizes for the HTML tag
-150%    24px
-137.5%  22px
-125%    20px
-*/
+:root {
+  /* Define reference size for calculations
+     (the largest size in media queries) */
+  --ref-size: 22; 
+}
+
+html {
+  font-size: 112.5%; /* 18px */
+}
+
+@media screen and (min-width: 100em) {
+  html { font-size: 125%; /* 20px */ }
+}
+
+@media screen and (min-width: 125em) {
+  html { font-size: 137.5%; /* 22px */ }
+}
 
 /* grid */
 
 .md-grid {
-  max-width: 74rem;
+  max-width: 80rem;
 }
 
 /* text */
@@ -18,15 +29,18 @@ Possible font sizes for the HTML tag
 }
 
 .md-path, .md-nav {
-  font-size: 0.75rem;
+  /* Reads as: Target 17px divided by Reference Size */
+  font-size: calc(17 / var(--ref-size) * 1rem); 
 }
 
 .md-typeset .admonition,
 .md-typeset details,
 .md-typeset .tabbed-labels > label {
-  font-size: 0.875rem;
+  /* Reads as: Target 20px divided by Reference Size */
+  font-size: calc(20 / var(--ref-size) * 1rem);
 }
 
+/*
 .md-typeset .admonition p,
 .md-typeset details p,
 .md-typeset details summary,
@@ -34,6 +48,7 @@ Possible font sizes for the HTML tag
   margin-top: 0.6rem;
   margin-bottom: 0.6rem;
 }
+*/
 
 .md-typeset .admonition .admonition-title::before,
 .md-typeset details summary::before,
